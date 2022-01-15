@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Add a default marker to a web map</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+    type="text/css"
+  />
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+
+<script>
+	mapboxgl.accessToken = 'YOUR_API_KEY';
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [12.550343, 55.665957],
+zoom:8
+});
+ 
+// Create a default Marker and add it to the map.
+const marker1 = new mapboxgl.Marker()
+.setLngLat(["LONGITUDE", "LATITUDE"])
+.addTo(map);
+ 
+// Create a default Marker, colored black, rotated 45 degrees.
+const marker2 = new mapboxgl.Marker({ color: 'black', rotation: 45 })
+.setLngLat([12.65147, 55.608166])
+.addTo(map);
+
+const marker3 = new mapboxgl.Marker()
+.setLngLat([80.270721, 13.082680])
+.addTo(map);
+
+const marker4 = new mapboxgl.Marker()
+.setLngLat([78.119774,9.925201])
+.addTo(map);
+
+const marker5= new mapboxgl.Marker()
+.setLngLat([80.10157,13.106774])
+.addTo(map);
+
+const marker6 = new mapboxgl.Marker()
+.setLngLat([80.101145,13.074003])
+.addTo(map);
+
+const marker7 = new mapboxgl.Marker()
+.setLngLat([80.079001,13.106774])
+.addTo(map);
+
+const marker8 = new mapboxgl.Marker()
+.setLngLat([80.024756,13.075340])
+.addTo(map);
+
+const marker9 = new mapboxgl.Marker()
+.setLngLat([80.081404,13.105771])
+.addTo(map);
+</script>
+</body>
+</html>
