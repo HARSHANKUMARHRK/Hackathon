@@ -23,7 +23,7 @@ body { margin: 0; padding: 0; }
 <div id="map"></div>
 
 <script>
-	mapboxgl.accessToken = 'YOUR_API_KEY';
+	mapboxgl.accessToken = 'pk.eyJ1Ijoia2lzaG9yZWhhcnNoYW4iLCJhIjoiY2t5ZWkxMTQyMGZ0ZTJvcWhzMzNsb3RucSJ9.QeWIDURuBa7iXViFaDtQww';
 const map = new mapboxgl.Map({
 container: 'map',
 style: 'mapbox://styles/mapbox/streets-v11',
@@ -33,41 +33,66 @@ zoom:8
  
 // Create a default Marker and add it to the map.
 const marker1 = new mapboxgl.Marker()
-.setLngLat(["LONGITUDE", "LATITUDE"])
+.setLngLat([80.278532,13.035405])
 .addTo(map);
  
 // Create a default Marker, colored black, rotated 45 degrees.
 const marker2 = new mapboxgl.Marker({ color: 'black', rotation: 45 })
-.setLngLat([12.65147, 55.608166])
+.setLngLat([80.279422,13.033649])
 .addTo(map);
 
 const marker3 = new mapboxgl.Marker()
-.setLngLat([80.270721, 13.082680])
+.setLngLat([80.278274,13.034098])
 .addTo(map);
 
 const marker4 = new mapboxgl.Marker()
-.setLngLat([78.119774,9.925201])
+.setLngLat([80.279358,13.032572])
 .addTo(map);
 
 const marker5= new mapboxgl.Marker()
-.setLngLat([80.10157,13.106774])
+.setLngLat([80.278478,13.031882])
 .addTo(map);
 
 const marker6 = new mapboxgl.Marker()
-.setLngLat([80.101145,13.074003])
+.setLngLat([80.278660,13.031328])
 .addTo(map);
 
 const marker7 = new mapboxgl.Marker()
-.setLngLat([80.079001,13.106774])
+.setLngLat([80.277415,13.028527])
 .addTo(map);
 
 const marker8 = new mapboxgl.Marker()
-.setLngLat([80.024756,13.075340])
+.setLngLat([80.276997,13.025809])
 .addTo(map);
 
 const marker9 = new mapboxgl.Marker()
-.setLngLat([80.081404,13.105771])
+.setLngLat([80.275828,13.026164])
 .addTo(map);
+
+const marker10 = new mapboxgl.Marker()
+.setLngLat([80.276375,13.026091])
+.addTo(map);
+
+const marker11 = new mapboxgl.Marker()
+.setLngLat([80.101145,13.074003])
+.addTo(map);
+
+const marker12 = new mapboxgl.Marker()
+.setLngLat([80.101145,13.074003])
+.addTo(map);
+
+const marker13 = new mapboxgl.Marker()
+.setLngLat([80.278564,13.034882])
+.addTo(map);
+
+const marker14 = new mapboxgl.Marker()
+.setLngLat([80.279165,13.035520])
+.addTo(map);
+
+const marker15 = new mapboxgl.Marker()
+.setLngLat([80.276193,13.026833])
+.addTo(map);
+
 </script>
 </body>
 </html>
